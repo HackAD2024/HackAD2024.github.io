@@ -63,10 +63,10 @@ header {
     /* padding: 1em; */
     text-align: center; 
     
-    @media (min-width: 600px) {
+    /* @media (min-width: 600px) {
         flex-direction: row;
         justify-content: space-between;
-    }
+    } */
 }
 .mission-container { 
     top:inherit;
@@ -75,13 +75,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0em;
+    /* padding: 0em; */
     text-align: center; 
     
-    @media (min-width: 600px) {
+    /* @media (min-width: 600px) {
         flex-direction: row;
         justify-content: space-between;
-    }
+    } */
 }
 
 #menu ul{
@@ -668,7 +668,7 @@ a:link {
 } */
 .container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     margin: 0;
     display: flex;
@@ -678,13 +678,14 @@ a:link {
 }
 
 .mission-container {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     top: 50%; /* Position the top of the container at the vertical center of the parent */
     left: 50%; /* Position the left of the container at the horizontal center of the parent */
     transform: translate(-50%, -50%); /* Move the container up and left by half of its own width and height */
     z-index: -10;
     width: 97.5vw; /* Container spans 97.5% of the viewport width */
-    height: 45vw;
+    height: 65vh;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0;
     display: flex;
