@@ -715,7 +715,8 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 320px;
+    min-height: 50vh;
+    max-height: 750px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -728,7 +729,8 @@ a:link {
     z-index: -10;
     width: 97.5vw; /* Container spans 97.5% of the viewport width */
     height: 57vw;
-    min-height: 300px;
+    min-height: 47vh;
+    max-height: 700px;
     /* max-height:400px; */
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0;
