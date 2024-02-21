@@ -1,5 +1,7 @@
+
 html {
     height: 100%;
+    width: 100%;
 }
 
 * {
@@ -53,16 +55,12 @@ header {
 
 } 
 
-/* #NYUAD-logo { */
-    /* width: 80%;  */
-/* } */
-
 .container { 
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    /* padding: 1em; */
     text-align: center; 
     
     @media (min-width: 600px) {
@@ -106,13 +104,11 @@ header {
 
 #menu a{
     color: #505A6E;
-    /* font-family: 'Roboto Slab', 'serif'; */
     font-family: "Ubuntu", "sans-serif";
     cursor: pointer;
-    font-size: 2vh;
+    font-size: 2vw;
     font-weight: 400;
     line-height: 45px;
-    /* margin: 0 0 1vh; */
     margin: 1 vh;
     max-width: 160px; 
     position: relative;
@@ -120,6 +116,11 @@ header {
     text-transform: uppercase;
     width: 100%; 
     &:hover { text-decoration: none; }
+}
+@media screen and (min-width: 800px) {
+    #menu a {
+        font-size: 1.2vw; 
+    }
 }
 
 #menu a:hover{
@@ -196,7 +197,7 @@ a:link {
     /* font-family: 'Touche', black,  sans-serif; */
     /* font-family: 'Outfit Bold', sans-serif; */
     /* font-weight: bold; */
-    font-size: 6vh;
+    font-size: 3vw;
     color: #DBDFEB;
     text-align: center;
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
@@ -555,9 +556,9 @@ a:link {
     /* margin-top: 80vh; */
     /* padding-left: 4vw; */
     width: 100vw;
-    /* height: 40vh; */
+    height: 100vh;
     text-align: left;
-    height: fit-content;
+    /* height: fit-content; */
     /* display: flex;
     flex-direction: column;  */
     /* padding-bottom: 50px; */
@@ -584,7 +585,12 @@ a:link {
     justify-content: center;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    font-size: 4vh;
+    font-size: 3vw;
+    @media screen and (min-width: 800px) {
+        #menu a {
+            font-size: 3vw; 
+        }
+    }
     color: white;
     /* padding-bottom: 5vh; */
 }
@@ -613,7 +619,12 @@ a:link {
     /* padding-left: 5vw; */
     padding-top: 3vh;
     font-weight: 100;
-    font-size: 2.5vh;
+    font-size: 1.7vw;
+    @media screen and (min-width: 700px) {
+        #menu a {
+            font-size: 1vw; 
+        }
+    }
     /* width: 18vw; */
     width: 90vw;
 }
@@ -623,45 +634,64 @@ a:link {
     /* padding-left: */
     font-family: 'Ubuntu', sans-serif;
     font-weight: 200;
-    font-size: 22px;
+    font-size: 2vw;
     color: #f5dd95;
     text-shadow: 0px 0px 12px rgba(0,0,0, 0.4);
 }
-.container {
+/* .container {
     position: relative;
     left: 0;
     top: -10;
     width: 100; 
-    height: 65vh; 
+    height: 70vh; 
     margin: 0;
     display: flex;
     background-color: rgba(0,0,0,0.2);
     align-items: center;
-    justify-content: center; /* Center content horizontally within the container */
+    justify-content: center; 
 }
 .mission-container {
-    /* position: absolute; */
     z-index: -10;
     position: relative;
     align-self: center;
     display: flex;
     flex-direction: column;
-    /* left: 1vh; */
-    top: inherit;
-    width: 97.5vw; /* Container spans 90% of the viewport width */
-    height: 60vh; /* Same height as mission-sct-txt */
+    top: 15vh;
+    width: 97.5vw; 
+    height: 45vw;
     margin: 0;
     display: flex;
     background-color: rgba(0,0,0,0.5);
-    /* background-color: rgba(255, 255, 255, 0.2); */
     padding: 0;
     justify-content: space-around;
-    /* padding-left: 12vw; */
     padding-bottom: 5vh;
-    /* padding-right: 6vw; */
-    /* background-color: rgba(0,0,0,0.2); */
-    /* justify-content: left;  */
+} */
+.container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
+.mission-container {
+    position: absolute;
+    top: 50%; /* Position the top of the container at the vertical center of the parent */
+    left: 50%; /* Position the left of the container at the horizontal center of the parent */
+    transform: translate(-50%, -50%); /* Move the container up and left by half of its own width and height */
+    z-index: -10;
+    width: 97.5vw; /* Container spans 97.5% of the viewport width */
+    height: 45vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .mission-sct-txt{
     display: flex;
     flex-direction: column;
@@ -674,7 +704,6 @@ a:link {
     line-height: 2;
     font-size: 2.7vh;
     padding-top: 0vw;
-    /* padding-right: 4vw; */
     color: white;
     height: 40vh;
     justify-content: space-around;
@@ -1171,6 +1200,7 @@ body {
     font-family: sans-serif;
     background-color: #031634;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 .text-box {
