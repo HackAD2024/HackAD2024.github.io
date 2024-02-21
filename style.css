@@ -459,6 +459,25 @@ a:link {
     padding-top: 5vh;
     /* padding-top: 40px; */
 }
+#e-board{
+    font-family: Outfit;
+    font-weight: '900';
+    /* margin-top: 100vh; */
+    color: white;
+    margin-bottom: 50px;
+    padding-top: 10vh;
+    /* padding-top: 40px; */
+}
+#mission-heading{
+    font-family: Outfit;
+    font-weight: '900';
+    font-size: 4vh;
+    /* margin-top: 100vh; */
+    color: #B5D9F2;
+    margin-bottom: 50px;
+    padding-top: 5vh;
+    /* padding-top: 40px; */
+}
 
 /* navigation for past events, including right left button and semester */
 .past-event-nav{
@@ -599,7 +618,7 @@ a:link {
     color: white;
     /* padding-bottom: 5vh; */
 }
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
     .mission-sct h1 {
         font-size: 3vw; 
     }
@@ -608,7 +627,7 @@ a:link {
     .mission-sct h1 {
         font-size: 20px; 
     }
-}
+} */
 .mission-sct h2{
     /* left: 5vw; */
     /* align-self: left; *
@@ -633,6 +652,7 @@ a:link {
 .mission-sct p{
     /* padding-left: 5vw; */
     /* padding-top: 3vh; */
+    padding-bottom: 8vh;
     margin: 0;
     font-weight: 100;
     font-size: 1.7vw;
