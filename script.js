@@ -5,6 +5,7 @@ let countLeftBtn = 0;
 let i = 0;
 let txt = 'Past Events'; /* The text */
 let contact_txt = 'Be Connected!';
+let eboard_txt = 'The people behind this...'
 let speed = 70; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter(txt, elementId) {
@@ -30,6 +31,9 @@ function highlightMenuItem(event) {
     // Change font color of the newly selected menu item to white
     var selectedItem = event.target;
     selectedItem.classList.add('selected');
+    
+    // Reload the page
+    location.reload();
 }
 
 window.addEventListener('load', () => {
@@ -63,5 +67,6 @@ window.addEventListener('load', () => {
     // typeWriter();
     typeWriter(txt, "past-event-heading");
     typeWriter(contact_txt, "contact-heading");
+    typeWriter(eboard_txt, "e-board");
 })
 
