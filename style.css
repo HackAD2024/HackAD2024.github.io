@@ -610,13 +610,18 @@ a:link {
     justify-content: center;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
     /* padding-bottom: 5vh; */
 }
 @media screen and (min-width: 800px) {
     .mission-sct h1 {
         font-size: 3vw; 
+    }
+}
+@media screen and (max-width: 400px) {
+    .mission-sct h1 {
+        font-size: 60px; 
     }
 }
 .mission-sct h2{
@@ -646,13 +651,13 @@ a:link {
     margin: 0;
     font-weight: 100;
     font-size: 1.7vw;
-    @media screen and (min-width: 700px) {
-        #menu a {
-            font-size: 1vw; 
-        }
-    }
     /* width: 18vw; */
     width: 90vw;
+}
+@media screen and (max-width: 600px) {
+    .mission-sct p {
+        font-size: 2vw; 
+    }
 }
 
 .mission-heading{
@@ -671,7 +676,7 @@ a:link {
 }
 @media screen and (max-width: 800px) {
     .mission-heading {
-        font-size: 2vw; 
+        font-size: 4vw; 
     }
 }
 /* .container {
@@ -737,7 +742,7 @@ a:link {
     text-align: left;
     width: 80%;
     height: 80%;
-    max-height: 200px;
+    max-height: 150px;
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
     line-height: 2;
