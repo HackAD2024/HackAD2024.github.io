@@ -621,7 +621,7 @@ a:link {
 }
 @media screen and (max-width: 400px) {
     .mission-sct h1 {
-        font-size: 60px; 
+        font-size: 5vw; 
     }
 }
 .mission-sct h2{
@@ -741,7 +741,7 @@ a:link {
     /* align-items: center; */
     text-align: left;
     width: 80%;
-    height: 80%;
+    height: 80vh;
     max-height: 150px;
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
