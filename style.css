@@ -737,6 +737,7 @@ a:link {
     text-align: left;
     width: 80%;
     height: 80vh;
+    min-height: 35vh;
     max-height: 150px;
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
