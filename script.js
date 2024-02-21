@@ -6,6 +6,7 @@ let i = 0;
 let txt = 'Past Events'; /* The text */
 let contact_txt = 'Be Connected!';
 let eboard_txt = 'The people behind this...'
+let mission_txt = 'Our Mission'
 let speed = 70; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter(txt, elementId) {
@@ -68,5 +69,6 @@ window.addEventListener('load', () => {
     typeWriter(txt, "past-event-heading");
     typeWriter(contact_txt, "contact-heading");
     typeWriter(eboard_txt, "e-board");
+    typeWriter(mission_txt, "mission-heading");
 })
 
