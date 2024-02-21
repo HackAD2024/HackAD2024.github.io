@@ -700,7 +700,7 @@ a:link {
 .container {
     position: relative;
     width: 100vw;
-    height: 60vw;
+    height: 55vw;
     margin: 0;
     display: flex;
     align-items: center;
@@ -718,7 +718,7 @@ a:link {
     transform: translate(-50%, -50%); /* Move the container up and left by half of its own width and height */
     z-index: -10;
     width: 100vw; /* Container spans 97.5% of the viewport width */
-    height: 57vw;
+    height: 50vw;
     min-height: 40vh;
     max-height: 650px;
     /* max-height: 700px; */
