@@ -1317,7 +1317,7 @@ body {
     padding-bottom: 1vh;
     display: grid;
     grid-template-columns: 1fr auto;
-}
+} 
 
 .footer-container p{
     font-family: 'Ubuntu';
