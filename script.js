@@ -1,13 +1,12 @@
-// let yearSemesterList = ['Spring 2018', 'Fall 2018', 'Spring 2019', 'Fall 2019', 'Spring 2020', 'Fall 2020', 'Spring 2021', 'Fall 2021', 'Spring 2022', 'Fall 2022'];
 let yearSemesterList = ['Spring 2024','Fall 2023','Spring 2023','Fall 2022','Spring 2022','Fall 2021','Spring 2021','Fall 2020','Spring 2020', 'Fall 2019', 'Spring 2019','Fall 2018', 'Spring 2018'];
 let count = 0;
 let countLeftBtn = 0;
 let i = 0;
-let txt = 'Past Events'; /* The text */
+let txt = 'Past Events'; 
 let contact_txt = 'Be Connected!';
-let eboard_txt = 'The people behind this...'
+let eboard_txt = 'The People Behind This'
 let mission_txt = 'Our Mission'
-let speed = 70; /* The speed/duration of the effect in milliseconds */
+let speed = 70; 
 
 function typeWriter(txt, elementId) {
     let j = 0;
@@ -22,18 +21,13 @@ function typeWriter(txt, elementId) {
 }
 
 function highlightMenuItem(event) {
-    // Remove highlight class from previously clicked menu item
-    // / Remove font color from the previously selected menu item
     var previousSelectedItem = document.querySelector('.selected');
     if (previousSelectedItem) {
         previousSelectedItem.classList.remove('selected');
     }
-
-    // Change font color of the newly selected menu item to white
     var selectedItem = event.target;
     selectedItem.classList.add('selected');
-    
-    // Reload the page
+    // Reload Page
     location.reload();
 }
 
@@ -65,7 +59,7 @@ window.addEventListener('load', () => {
         children[count].style.display = 'block';
     })
 
-    // typeWriter();
+    // Section headings
     typeWriter(txt, "past-event-heading");
     typeWriter(contact_txt, "contact-heading");
     typeWriter(eboard_txt, "e-board");
