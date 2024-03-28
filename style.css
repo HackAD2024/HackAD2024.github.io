@@ -52,7 +52,7 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center; 
 }
 .mission-container { 
@@ -61,8 +61,9 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center; 
+    /* padding-bottom: 20vw; */
 }
 
 #menu ul{
@@ -390,8 +391,9 @@ a:link {
     font-size: 5vw;
     /* font-size: 4vh; */
     /* color: #B5D9F2; */
-    margin-bottom: 10px;
-    padding-top: 5vh;
+    margin-bottom: 20px;
+    /* padding-bottom: 20vw; */
+    /* padding-top: 0vh; */
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -524,7 +526,7 @@ a:link {
     text-shadow: 0px 0px 12px rgba(0,0,0, 0.4); */
 /* } */
 .mission-sct p{
-    padding-bottom: 8vh;
+    padding-bottom: 50vw;
     margin: 0;
     font-weight: 100;
     font-size: 1.7vw;
@@ -542,18 +544,12 @@ a:link {
 }
 
 .mission-heading{
-    /* display: flex;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 200;
-    /* font-size: 2vw; */
-    /* color: #f5dd95;
-    text-shadow: 0px 0px 12px rgba(0,0,0, 0.4);  */
     font-family: Outfit;
     font-weight: '900';
     margin-bottom: 50px;
     padding-top: 3vh;
 }
-/* @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .mission-heading {
         font-size: 2.5vw; 
     }
@@ -562,18 +558,17 @@ a:link {
     .mission-heading {
         font-size: 2.5vw; 
     }
-} */
+}
 
 .container {
     position: relative;
     width: 100vw;
     height: 55vw;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 44vh;
-    max-height: 550px;
+    max-height: 650px;
     background-color: rgba(255, 255, 255, 0.1);
     z-index: -12;
 }
@@ -587,7 +582,7 @@ a:link {
     width: 100vw;
     height: 50vw;
     min-height: 40vh;
-    max-height: 500px;
+    max-height: 600px;
     background-color: rgba(3, 22, 52, 0.7);
     /* background-color: rgba(3, 22, 52, 0.7); */
     /* background-color: #031634; */
